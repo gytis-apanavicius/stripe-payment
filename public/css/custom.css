@@ -25,3 +25,35 @@
 .StripeElement--webkit-autofill {
     background-color: #fefde5 !important;
 }
+
+.msg-box
+{
+    margin-top:50px;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+
+.box-success
+{
+    border: 1px #3ec245 solid;
+}
+.msg-box.box-success h2
+{
+    color: #3ec245;
+}
+
+.box-error
+{
+    border: 1px #e81717 solid;
+}
+
+.msg-box.box-error h2
+{
+    color: #e81717;
+}
+
+.fas
+{
+    margin-right: 5px;
+}
