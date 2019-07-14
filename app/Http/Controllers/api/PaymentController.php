@@ -49,7 +49,7 @@ class PaymentController extends Controller
      * Filename structure for logFile Y-m-d_H:i:s_{payment_id}
      * @param $response Response that was gotten from cURL request. Contains all necessary data that needs to be
      * outputted to log file.
-     * @return filename of outputted file. File is stored in {project_root}/storage/app/stripe_payment_logs/ folder.
+     * @return string file name of outputted file. File is stored in {project_root}/storage/app/stripe_payment_logs/ folder.
      */
     public function logStripePaymentToFile($response)
     {
