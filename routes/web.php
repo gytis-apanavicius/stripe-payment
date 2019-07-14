@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/success', function () {
+    return view('success');
+});
+
+Route::get('/payment_error', function () {
+    return view('error_payment');
+});
