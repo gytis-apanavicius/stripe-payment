@@ -43,7 +43,7 @@ be displayed in success message page.</p>
 <p>In the credit card field type: 4242 4242 4242 4242 </p>
 <p> Expiration date can be any date from tommorrow
 <p> CVC any 3 digit length number </p>
-<p> Zip code: all zipcodes are valid</p>
+<p> Zip code: any zipcode that is valid</p>
 <p> After entering your data press "Submit Payment". Then you will be redirected to
 a page that informs you about successful payment. Also the page contains full path
 to the file where information about this particular payment is contained. </p>
