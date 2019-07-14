@@ -37,9 +37,13 @@ class PaymentController extends Controller
         if ($response_status != 200)
         {
             //something is wrong with payment - redirect to bad payment page.
+            return redirect('/payment_error');
         }
 
-        $this->logStripePaymentToFile($response);
+        $file_name = $this->logStripePaymentToFile($response);
+        session_start();
+        $_SESSION['filename'] = $file_name;
+        return redirect('/success');
 
 
     }

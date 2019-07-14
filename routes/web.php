@@ -16,7 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('/success', function () {
-    return view('success');
+    session_start();
+    if (array_key_exists('filename', $_SESSION)) {
+        $filename = $_SESSION['filename'];
+        //remove filename from session, so that user wouldn't be able to open success page
+        unset($_SESSION['filename']);
+        return view('success', ['filename' => base_path('storage/app') . '/' . $filename]);
+    } else
+        return redirect('/');
 });
 
 Route::get('/payment_error', function () {
